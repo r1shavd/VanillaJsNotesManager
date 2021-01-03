@@ -1,0 +1,44 @@
+<!--
+The main HTML file for the Encrypted Notes Manager
+This is a simple notes manager application, but only change here is that each notes can be encrypted using a separate passwords.
+
+Note :-
+
+[1] The structure of the HTML element should not be disturbed otherwise there would be errors (misplacemenet of the elements).
+[2] If you do any changes, always remember to keep commenting, it makes the source file more attractive and other contributors and users will understand the source code with ease.
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Encrypted Notes Manager</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- <link rel="icon" href="images/tab-icon.jpg"> -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<!-- The body section -->
+	<!-- The header for the page -->
+	<div class="header">Encrypted Notes Manager - VanillaJS</div>
+
+	<!-- The notes inserting form -->
+	<h2>Create a new note here</h2>
+	<div class="container">
+		<input type="text" name="note-title" placeholder="Title of the note">
+		<textarea name="note-content" placeholder="Type your notes here"></textarea>
+		<input type="password" name="note-password" placeholder="Enter the password here">
+		<button class="btn" id="add-note-btn">Add Note</button>
+	</div>
+
+	<!-- The dividing horizontal dashed ruler for separating the two containers -->
+	<hr style="color: #fff; border: 1px dashed;">
+
+	<!-- The notes displaying container -->
+	<h2>Existing notes</h2>
+	<div class="container" id="notes-container"></div>
+
+</body>
+<!-- Linking our HTML document with the script.js which contains all the javascript codes to be executed on client side once the user opens this HTML document. -->
+<script type="text/javascript" src="script.js"></script>
+</html>

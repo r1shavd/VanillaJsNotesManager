@@ -1,0 +1,133 @@
+/*
+CSS File for the Encrypter Notes Manager - VanillaJS
+
+Note :-
+1. The default CSS properties are set according to the mobile version view for the tool.
+2. For the desktop version view (width > 850px), we use media keyword for change in CSS properties.
+
+Author : Rishav Das
+*/
+
+/* Setting the basic properties of the body */
+body {
+	background-size: 100%;
+	background-image: url(images/body-background.jpg);
+	color: #fff;
+	font-family: Arial;
+}
+
+/* Setting the CSS Properties for the 'container' div */
+.container {
+	width: 90%;
+	margin: 5px 5%;
+	padding: 10px;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Setting the CSS properties of the btn */
+.btn {
+	padding: 7.5px 15px;
+	margin: 5px;
+	border: 1px solid #000;
+	border-radius: 5px;
+	color: #000;
+	background-color: #fff;
+}
+.btn:hover {
+	color: #000;
+	background-color: #e74c3c;
+	border: 1px solid #000;
+}
+
+/* Setting the CSS properties for the header div element of the page */
+.header {
+	width: 100%;
+	margin: -10px;
+	border-bottom: 1px solid #e74c3c;
+	min-height: 50px;
+	padding: 10px;
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.8);
+	font-size: 22.5px;
+	color: #fff;
+	font-weight: bold;
+}
+
+/* Setting the CSS properties of the h2 HTML element */
+h2 {
+	font-size: 20px;
+}
+
+/* Setting the CSS properties of the textarea HTML element */
+textarea {
+	resize: none;
+	padding: 5px;
+	margin: 5px;
+	font-size: 15px;
+	font-family: Arial;
+	width: 80%;
+	border-radius: 5px;
+}
+
+/* Setting the CSS properties for the HTML element input[type="text"] called text input boxes */
+input[type="text"] {
+	width: 80%;
+	padding: 5px;
+	margin: 5px;
+	font-size: 15px;
+}
+
+/* Setting the CSS properties for the password input boxes */
+input[type="password"] {
+	width: 75%;
+	padding: 5px;
+	margin: 5px;
+	font-size: 15px;
+}
+
+/* Setting the CSS properties for the note-card */
+.note-card {
+	margin: 5px;
+	padding: 5px;
+	width: 80%;
+	background-color: #34495e;
+	color: #e74c3c;
+	border: 1px solid #e74c3c;
+	border-radius: 5px;
+}
+
+/* Setting the CSS properties of the other elements of the note-card ;-) */
+.note-title {
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 1.5;
+	color: #c0392b;
+	margin: 5px;
+}
+.note-content {
+	color: #fff;
+	margin: 5px;
+	font-size: 15px;
+	width: 100%;
+	word-wrap: break-word;
+}
+
+@media only screen and (min-width: 850px) {
+	/* Changing the CSS properties of the elements as per the desktop version view */
+
+	/* Desktop version changes in CSS properties of the 'container' div */
+	.container {
+		width: 80%;
+		margin: 5px 10%;
+	}
+
+	/* Desktop version changes in CSS properties of the header div element */
+	.header {
+		font-size: 30px;
+	}
+
+	/* Desktop version changes in CSS properties of the 'input' boxes elements */
+	input[type="password"] {
+		width: 70%;
+	}
+}
